@@ -18,3 +18,14 @@ data "aws_ami" "rhel_info" {
         values = ["hvm"]
     }
 }
+
+data "aws_subnets" "default" {
+  filter {
+    name   = "vpc-id"
+    values = [var.vpc_id]
+  }
+}
+
+data "aws_subnet" "selected" {
+  id = data.aws_subnets.default.ids[0]
+}
