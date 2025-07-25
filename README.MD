@@ -22,9 +22,19 @@
 We will set time oppositely like 36 start, 34 stop
 
 ## Terraform commands:
+```
 terraform init
+```
+```
 terraform plan "auto.plan"
-terraform apply "auto.plan"  # if we give "auto.plan" here, we no need to give -auto-approve
+```
+```
+terraform apply "auto.plan" 
+```
+
+## if we give "auto.plan" here, we no need to give -auto-approve
+```
 terraform desploy -auto-approve
+```
 
 #cron expression is not working to start and stop based on time schedule.
