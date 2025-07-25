@@ -1,4 +1,4 @@
-# DevOps use cases with python
+## DevOps use cases with python
 
 1. List available repositories in our GitHub account
 2. How to create a GitHub repository?
@@ -17,24 +17,14 @@
 
 
 
-# Note: if you observer carefully the crobjob in event_bridge.tf,  the cronjob will stop at today evening at 8 PM everyday (Monday to Friday), then start tomorrow at 8 AM everyday (Monday to Friday).
+## Note: if you observer carefully the crobjob in event_bridge.tf,  the cronjob will stop at today evening at 8 PM everyday (Monday to Friday), then start tomorrow at 8 AM everyday (Monday to Friday).
 
 We will set time oppositely like 36 start, 34 stop
 
-Terraform commands:
-==================
+## Terraform commands:
 terraform init
 terraform plan "auto.plan"
 terraform apply "auto.plan"  # if we give "auto.plan" here, we no need to give -auto-approve
 terraform desploy -auto-approve
 
-
 #cron expression is not working to start and stop based on time schedule.
-
-
-
-
-
-
-
-
